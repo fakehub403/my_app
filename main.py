@@ -29,4 +29,4 @@ def handle_result(data):
             emit('output', {'result': data['res'], 'from': request.sid}, to=sid)
 
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0', port=5000)
+    socketio.run(app)
