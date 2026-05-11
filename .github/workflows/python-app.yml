@@ -1,0 +1,11 @@
+name: Keep My Cookie Alive
+on:
+  schedule:
+    - cron: '*/10 * * * *' # يشتغل كل 10 دقائق
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Heartbeat Script
+        run: |
+          curl -H "Cookie: your_cookie_here" https://breach.vip/api/ping
