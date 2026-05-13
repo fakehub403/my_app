@@ -2,11 +2,21 @@ name: Keep My Cookie Alive
 on:
   schedule:
     - cron: '*/10 * * * *' # يشتغل كل 10 دقائق
+  workflow_dispatch: # ضفتلك دي عشان تقدر تشغله يدوي للتجربة
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4 # خطوة مهمة جداً عشان يسحب ملفاتك
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # حدد النسخة اللي تريحك
+
       - name: Run Heartbeat Script
         run: |
-          python3 pip install requirements.txt
-          python3 main.py
+          pip install -r requirements.txt
+          python main.py
