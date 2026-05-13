@@ -20,8 +20,6 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install requests
-          # لو عندك ملف ريكوايرمنتس فكه من الكومنت تحت:
-          # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Heartbeat Script
         run: python main.py
