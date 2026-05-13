@@ -35,11 +35,3 @@ json_data = {
 }
 
 response = requests.post('https://breach.vip/api/search', headers=headers, json=json_data)
-
-while True:
-    time.sleep(random.randint(4, 10))
-    if response.status_code != 200:
-        break
-    else:
-        print(response.status_code)
-        continue
