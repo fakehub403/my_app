@@ -35,3 +35,4 @@ json_data = {
 }
 
 response = requests.post('https://breach.vip/api/search', headers=headers, json=json_data)
+print(response.status_code)
