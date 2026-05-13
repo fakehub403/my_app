@@ -21,7 +21,7 @@ headers = {
     'sec-fetch-site': 'same-origin',
     'sec-gpc': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
-    'cookie': 'XhPbtNbRzEbIchorDHGu9Kz.d5smLkKzVgWbU9cbUmM-1778677046-1.2.1.1-gcPlXutc9FD9WfEcQGCdeeaboe0qBt_LcOX9xhYjpdYGcU64Jcivor3VnvQcjQD2WyXb.pd7.r9NjVb1_r6Btkr8Vz6I9uQaiUIfliVcFwaWTGAxYM.hHsxErLvxX9SHC9W8k2dAqP0OvvO28AdUbLIDtZIef0RajQA0nC4hoKUd1QxnSB5SlkgJEwnTcirIdeCF077q3zFXnJVDcZk8SJ78THuzjSHUeKZIB866JVo7_l5JkXwDW.V1CY_RfpRTtdnVkblpx7WTSoUNWTsmaBmSnWjLgY9TAGlUM9FbfpYg4E0Y7XCH15Ge0OIlexFPNNNGcFdKDcl.0miAKS3HZ8tMGWxFL0KT8TZAHd9NJlQGOVRTQGQe8Z7sIl3QOai48wJQjv7ySnqQ7bzBxRe4A8Zk7TQ0bSKiHy7uvrCaUKE',
+    'cookie': 'cf_clearance=XhPbtNbRzEbIchorDHGu9Kz.d5smLkKzVgWbU9cbUmM-1778677046-1.2.1.1-gcPlXutc9FD9WfEcQGCdeeaboe0qBt_LcOX9xhYjpdYGcU64Jcivor3VnvQcjQD2WyXb.pd7.r9NjVb1_r6Btkr8Vz6I9uQaiUIfliVcFwaWTGAxYM.hHsxErLvxX9SHC9W8k2dAqP0OvvO28AdUbLIDtZIef0RajQA0nC4hoKUd1QxnSB5SlkgJEwnTcirIdeCF077q3zFXnJVDcZk8SJ78THuzjSHUeKZIB866JVo7_l5JkXwDW.V1CY_RfpRTtdnVkblpx7WTSoUNWTsmaBmSnWjLgY9TAGlUM9FbfpYg4E0Y7XCH15Ge0OIlexFPNNNGcFdKDcl.0miAKS3HZ8tMGWxFL0KT8TZAHd9NJlQGOVRTQGQe8Z7sIl3QOai48wJQjv7ySnqQ7bzBxRe4A8Zk7TQ0bSKiHy7uvrCaUKE',
 }
 
 json_data = {
