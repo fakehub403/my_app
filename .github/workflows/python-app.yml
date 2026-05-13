@@ -1,7 +1,7 @@
 name: Keep My Cookie Alive
 on:
   schedule:
-    - cron: '*/10 * * * *' # يشتغل كل 10 دقائق
+    - cron: '* * * * *' # يشتغل كل 10 دقائق
   workflow_dispatch: # ضفتلك دي عشان تقدر تشغله يدوي للتجربة
 
 jobs:
