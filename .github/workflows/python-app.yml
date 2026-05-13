@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Run Heartbeat Script
         run: |
-          curl -H "Cookie: your_cookie_here" https://breach.vip/api/ping
+          python3 main.py
