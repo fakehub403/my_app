@@ -8,4 +8,5 @@ jobs:
     steps:
       - name: Run Heartbeat Script
         run: |
+          python3 pip install requirements.txt
           python3 main.py
