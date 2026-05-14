@@ -1,38 +1,40 @@
-import requests, time, random
+import requests
 
+cookies = {
+    'captcha_token': 'eyJleHAiOjE3Nzg3OTAwMDB9.7d707f5c633de699b3c5b43bb1f8d510a4f4e50353347a88e15ff119c1e939f8',
+}
 
 headers = {
-    'accept': '*/*',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
     'accept-language': 'en-US,en;q=0.8',
-    'content-type': 'application/json',
-    'origin': 'https://breach.vip',
-    'priority': 'u=1, i',
-    'referer': 'https://breach.vip/',
+    'cache-control': 'max-age=0',
+    'priority': 'u=0, i',
     'sec-ch-ua': '"Chromium";v="148", "Brave";v="148", "Not/A)Brand";v="99"',
-    'sec-ch-ua-arch': '"x86"',
-    'sec-ch-ua-bitness': '"64"',
-    'sec-ch-ua-full-version-list': '"Chromium";v="148.0.0.0", "Brave";v="148.0.0.0", "Not/A)Brand";v="99.0.0.0"',
     'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
     'sec-ch-ua-platform': '"Linux"',
-    'sec-ch-ua-platform-version': '""',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
     'sec-gpc': '1',
+    'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
-    'cookie': 'cf_clearance=XhPbtNbRzEbIchorDHGu9Kz.d5smLkKzVgWbU9cbUmM-1778677046-1.2.1.1-gcPlXutc9FD9WfEcQGCdeeaboe0qBt_LcOX9xhYjpdYGcU64Jcivor3VnvQcjQD2WyXb.pd7.r9NjVb1_r6Btkr8Vz6I9uQaiUIfliVcFwaWTGAxYM.hHsxErLvxX9SHC9W8k2dAqP0OvvO28AdUbLIDtZIef0RajQA0nC4hoKUd1QxnSB5SlkgJEwnTcirIdeCF077q3zFXnJVDcZk8SJ78THuzjSHUeKZIB866JVo7_l5JkXwDW.V1CY_RfpRTtdnVkblpx7WTSoUNWTsmaBmSnWjLgY9TAGlUM9FbfpYg4E0Y7XCH15Ge0OIlexFPNNNGcFdKDcl.0miAKS3HZ8tMGWxFL0KT8TZAHd9NJlQGOVRTQGQe8Z7sIl3QOai48wJQjv7ySnqQ7bzBxRe4A8Zk7TQ0bSKiHy7uvrCaUKE',
+    # 'cookie': 'captcha_token=eyJleHAiOjE3Nzg2NjAwMDB9.96a295b55f42027ff157535e40a04f115b4768cf86b25f1b8ebf59944b67afd9',
 }
 
-json_data = {
-    'term': 'vectra.ai',
-    'fields': [
-        'domain',
-    ],
-    'wildcard': False,
-    'case_sensitive': False,
-    'categories': [],
-}
 
-response = requests.post('https://breach.vip/api/search', headers=headers, json=json_data)
-print(response.status_code)
+def send():
+    files = {
+        'q': f'site:{site} "@gmail.com"',
+        'category_general': '1',
+        'pageno': f'{num}',
+        'language': 'auto',
+        'time_range': '',
+        'safesearch': '1',
+        'theme': 'simple',
+    }
+    response = requests.post('https://priv.au/search', cookies=cookies,headers=headers, data=files)
+
+send()
+
+
