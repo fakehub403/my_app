@@ -25,9 +25,9 @@ headers = {
 
 def send():
     files = {
-        'q': f'site:{site} "@gmail.com"',
+        'q': f'site:facebook.com "@gmail.com"',
         'category_general': '1',
-        'pageno': f'{num}',
+        'pageno': '1',
         'language': 'auto',
         'time_range': '',
         'safesearch': '1',
